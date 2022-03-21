@@ -1,7 +1,7 @@
 .cell {
     border: 1px solid black;
-    height: 50px;
-    width: 50px;
+    height: 9vmin;
+    width: 9vmin;
 }
 
 .cell-dead {
@@ -10,4 +10,8 @@
 
 .cell-hitted {
     background: orange;
+}
+
+.cell-untouched {
+    background: aqua;
 }

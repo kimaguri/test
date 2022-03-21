@@ -4,8 +4,12 @@ import './Cell.css'
 
 const Cell = ({ cell, ships, field, onClick }) => {
 
-    if (!cell.touched || cell.shipIndex == null) {
+    if (!cell.touched) {
         return <div onClick={onClick} className={`cell`}></div>
+    }
+
+    if (cell.shipIndex == null) {
+        return <div onClick={onClick} className={`cell cell-untouched`}></div>
     }
 
     for (let i = 0; i < ships[cell.shipIndex].positions.length; i++) {

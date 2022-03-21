@@ -1,6 +1,8 @@
 .App {
     display: flex;
-    height: 100%;
-    justify-content: center;
+    height: 90vmin;
+    width: 90vmin;
+    margin: 0 auto;
+    margin-top: 5vmin;
     align-items: center;
 }
